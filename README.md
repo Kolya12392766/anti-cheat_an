@@ -1,4 +1,3 @@
-# anti-cheat_an
-"main.py" is anti cheat
-# make
-"ins.py" is save dll lib
+werwanefi-dfdsf
+"main.pyfs es anti cheattslfgujaihjsfddfads
+# e isf
