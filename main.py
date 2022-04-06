@@ -6,7 +6,7 @@ import os #import "os"
 import time #import "time"
 import filecmp #import "filecmp"
 
-app = "explorer.exe" #set  programm "file"
+app = "notepad.exe" #set  programm "file"
 timeout = 3 #set  timeout
 f1 = "start.log" #set  start "log" file
 f2 = "list.log" #set  programm "log" file
@@ -16,6 +16,6 @@ while app == app:
     os.system("listdlls.exe " + app + " >list.log") #save programm "log" file
     time.sleep(timeout)     #timeout
     result = filecmp.cmp(f1,f2)   #save result
-    if result == 0: #if
+    if result == 0: #if files is different
         os.system("taskkill /f /im " + app) #kill process
-        pass
+        break
