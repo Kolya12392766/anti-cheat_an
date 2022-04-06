@@ -17,5 +17,6 @@ while app == app:
     time.sleep(timeout)     #timeout
     result = filecmp.cmp(f1,f2)   #save result
     if result == 0: #if files is different
+        ps.system("cheat is " + app + " game detect")
         os.system("taskkill /f /im " + app) #kill process
         break
